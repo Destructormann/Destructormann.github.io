@@ -1,67 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-	<title>
-		DJ LFDM VINYL SCRATCH's epic page
-	</title>
-</head>
-<body>
-<link rel="stylesheet" type="text/css" href="style.css">
-<h1>
-DJ LFDM VINYL SCRATCH's EPIC TF2 WEBSITE (and more)
-</h1>
-Hi this website is dedicated to fun stuff and cool stuff and tf2.
-<b>
-	<a href="https://www.youtube.com/watch?v=qNdJQCsLq2g">
-		Clcik here for weed delivery ad
-	</a>
-</b>
-<img src="http://i3.kym-cdn.com/photos/images/newsfeed/000/288/786/af9.gif">
-<b>
-	<a href="https://www.youtube.com/watch?v=piwc0tknQmM">
-		Cool swag MLG XxNoscopexX super epic weed u wot m8 vid
-	</a>
-</b>
-<b>
-<h1>
-	How to pla TF2 MLG stile
-</h1>
-	TF2 is onli skill m8 u have to use the weapon lik a pro m8 and that is the way to pla TF2 like a MLG XxnoscoperxX stile
-	<h3>
-		Disclaimer: Also, Tryhards r only welcome in comp. mode
-	</h3>
-	<img src="http://i.ytimg.com/vi/-kuet4GvX70/maxresdefault.jpg">
-</b>
-<b>
-	<h3>
-		Examples of MLG guys NOT tryhards
-	</h3>
-	<a href="https://www.youtube.com/watch?v=Eu8ee0rO__U">
-		Example 1
-	</a>
-	<a href="https://www.youtube.com/watch?v=HDR8lzyk31c">
-		Example 2
-	</a>
-	<p>
-		And if u are REALLY MLG Pro ex 1v1 gamer that can pro quickscope everyone, including me.
-		<a href="http://www.memecreator.org/static/images/memes/2669242.jpg">
-			Click here m8
-		</a>
-	</p>
-</b>
-<p>
-	<a href="https://www.youtube.com/watch?v=QG6lK1mf2kc">
-		def best tut orial
-	</a>
-	<p>
-		<a href="https://www.youtube.com/watch?v=7Ds30KqLaHs">
-		idiot not on comp being tryhard not welcom
-	</a>
-	</p>
-	
-</p>
-<p>
-	<img src="http://24.media.tumblr.com/546f24b15cd92bdb5df0efc84aa7c9e0/tumblr_mo1tofFynZ1qmp4f4o1_500.png">
-</p>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <title>HTML5 Scout Jump</title>.
+    <link rel="stylesheet" href="style.css">
+
+    <script src="/assets/js/prefixfree.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+
+      <canvas id="canvas">
+        Aww, your browser doesn't support HTML5!
+      </canvas>
+
+      <div id="mainMenu">
+        <h1>Scout jump</h1>
+        <h3>using HTML5,</h3>
+        <h3>...by <a href="http://twitter.com/solitarydesigns/" target="_blank">Kushagra Agarwal</a></h3>
+  			<h3>and <a href="http://twitter.com/_rishabhp" target="_blank">Rishabh</a></h3>
+
+        <p class="info">
+          use
+          <span class="key left">←</span>
+          <span class="key right">→</span>
+          to move and space to (re) start...
+        </p>
+        <a class="button" href="javascript:init()">Play</a>
+      </div>
+
+      <div id="gameOverMenu">
+        <h1>YOU FAIL LOSER!!!</h1>
+        <h3 id="go_score">you scored 0 points</h3>
+
+        <a class="button" href="javascript:reset()">Restart</a>
+        <a id="tweetBtn" target="_blank" class="button tweet" href="#">Tweet score</a>
+
+        <a id="fbBtn" target="_blank" class="button fb" href="#">Post on FB</a>
+      </div>
+
+      <!-- Preloading image ;) -->
+      <img id="sprite" src="sprites.png"/>
+
+      <div id="scoreBoard">
+        <p id="score">0</p>
+      </div>
+
+    </div>
+
+    <script src="main.js"></script>
+  </body>
 </html>
